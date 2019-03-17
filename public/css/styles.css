@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #565656;
+}
+
+.flex {
+    display: flex;
+}
+
+.content-area {
+    padding: 1.5em;
+    width: 100%;
+    height: 100%;
+}
+
+.counters {
+    flex: 0.75;
+    padding: 0 1em;
+    flex-direction: column;
+}
+
+.counter-group {
+    flex-direction: column;
+    height: 180px;
+    padding: 1em;
+    border: 1px solid #9a9a9a;
+    color: #fafafa;
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
+
+.count {
+    flex: 10;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.counter-lbl {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.map {
+    flex: 2;
+    border: 1px solid #9a9a9a;
+    border-radius: 6px;
+}
+
+.marker {
+    width: 6px;
+    height: 6px;
+    background-color: #9CE81B;
+    opacity: 0.85;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.marker.facility {
+    width: 12px;
+    height: 12px;
+    background-color: #fafafa;
+}
+
+.order-popup {
+    opacity: 0.8;
+}
+
+/* uses class name used by mapbox; may need to be changed in future versions */
+.order-popup .mapboxgl-popup-tip {
+    border-width: 6px;
+    opacity: 0.8;
+}
+.order-popup .mapboxgl-popup-content {
+    font-size: 0.8em;
+    padding: 3px 6px;
+}

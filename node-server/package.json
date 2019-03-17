@@ -1,0 +1,17 @@
+{
+    "name": "odsim-node-server",
+    "version": "0.0.1",
+    "description": "Node backend with express to serve two endpoints",
+    "main": "index.js",
+    "author": {
+        "name": "Ari D",
+        "email": "adas1990.gatech@gmail.com"
+    },
+    "scripts": {
+        "prestart": "npm install",
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "4.16.4"
+    }
+}
